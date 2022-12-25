@@ -16,7 +16,7 @@
         if (mysqli_connect_errno()) {
             echo "Koneksi gagal: " . mysqli_connect_error();
         }else{
-            echo '<strong>KONEKSI BERHASIL.  <strong>';
+            echo '<strong>KONEKSI BERHASIL.  </strong>';
         }
         // buat sql quert untuk insert ke database
         // Buat query insert dan jalankan

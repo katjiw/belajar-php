@@ -6,7 +6,7 @@ $con= mysqli_connect("localhost","root","","fakultas");
 if(mysqli_connect_errno()){
     echo "Koneksi gagal". mysqli_connect_error();
 }else{
-    echo "Koneksi berhasil";
+    echo "<strong>Koneksi berhasil.";
 }
 
 // 3. Membaca data dari table mysql
@@ -42,6 +42,10 @@ mysqli_close($con);
         <tr>
             <th>NIM</th>
             <th>Nama</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat</th>
+            <th>Action</th>
         </tr>
         <?php foreach ($mahasiswa as $value): {}?>
         <tr>
